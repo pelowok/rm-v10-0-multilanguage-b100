@@ -1,0 +1,12 @@
+{
+  "name": "rmm-landingpage-b200",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.9.1"
+  },
+  "devDependencies": {
+    "video.js": "~4.12.11"
+  }
+}

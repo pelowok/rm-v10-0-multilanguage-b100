@@ -1,0 +1,441 @@
+
+/*==================     Main Styles     ======================*/
+body {
+    background: #ffffff;
+    color: #384c6d;
+    font: 400 16px/29px "Ubuntu", sans-serif;
+    -webkit-text-size-adjust: none;
+    min-width:480px; /* minimun width of 480px */
+    width: auto !important;  /* Firefox will set width as auto */
+    width:480px;             /* As IE ignores !important it will set width as 480px; */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.p-condensed {
+    line-height: 1.2em;
+}
+
+.btn-nude {
+    font-weight: 500;
+    color: #FFFFFF;
+    cursor: hand;
+    border-radius: 0;
+}
+
+.btn-nude,
+.btn-nude:active,
+.btn-nude[disabled],
+fieldset[disabled] .btn-nude {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-nude,
+.btn-nude:hover,
+.btn-nude:focus,
+.btn-nude:active {
+    border-color: transparent;
+}
+
+.btn-nude:hover,
+.btn-nude:focus {
+    color: #cccccc;
+    background-color: transparent;
+}
+
+.btn-nude[disabled]:hover,
+fieldset[disabled] .btn-nude:hover,
+.btn-nude[disabled]:focus,
+fieldset[disabled] .btn-nude:focus {
+    color: #999999;
+    text-decoration: none;
+}
+
+
+/*================= CUSTOM DECORATION ====================*/
+
+.bg-blue-primary, .bg-blue {
+    background: #0079c1;
+    color: #FFFFFF;
+}
+
+.bg-blue-lt {
+    background: #81d4f7;
+    color: #666666;
+}
+
+.bg-blue-drk {
+    background: #384c6d;
+    color: #CCCCCC;
+}
+
+.bg-grey {
+    background: #999999;
+    color: #FFFFFF;
+}
+
+.bg-grey-lt {
+    background: #cccccc;
+    color: #384c6d;
+}
+
+.bg-grey-drk {
+    background: #666666;
+    color: #FFFFFF;
+}
+
+.bg-white {
+    background: #FFFFFF;
+    color: #666666;
+}
+.bg-img-1 {
+    background-image: url("http://lorempixel.com/1920/1080/");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+.bg-img-10 {
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+.bg-img-10 h2 {
+     padding-top: 200px;
+     position: relative;
+     z-index: 2;
+}
+.bg-img-10 p {
+     padding: 12px;
+     position: relative;
+     z-index: 2;
+}
+.bg-img-10 img {
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: auto;
+         opacity: 0.6;
+    }
+
+.no-pad {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+.no-margin {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.absolute-75 {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
+/*=======================================================
+                       Components
+=========================================================*/
+
+/*==================     Brand     ======================*/
+img + .brand-name {
+    margin-top: 30px;
+}
+.brand-logo img.logo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.brand-logo{
+    display: block;
+    text-align: left;
+}
+.brand-slogan {
+    padding-left: 2em;
+    letter-spacing: 2px;
+    text-transform: none;
+    text-align: left;
+}
+.brand-contact{
+    padding-right: 2em;
+    letter-spacing: 2px;
+    text-transform: none;
+    text-align: right;
+}
+@media (min-width: 870px) {
+    .brand-logo img.logo{
+        max-width: 240px;
+    }
+}
+@media (max-width: 869px) {
+    .brand-logo img.logo{
+        /*min-width: 25%;*/
+        max-width: 240px;
+    }
+
+}
+
+
+/*==================      splashimg     ======================*/
+.splashimg {
+    /*padding-top: 40px;*/
+    padding-bottom: 40px;
+    /*background: #333333;*/
+    /*margin-bottom: 30px;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+.splashimg-header {
+    padding-top: 117px;
+    position: relative;
+    float: left;
+    text-align: left;
+    margin-bottom: 10%;
+}
+.splashimg-footer {
+    position: relative;
+    float: none;
+    text-align: center;
+}
+.splashimg h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+    margin-bottom: 10%;
+    text-transform: none;
+    /*text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);*/
+}
+.splashimg h2 span {
+    text-transform: none;
+}
+.splashimg h3 {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 2.4px;
+}
+.splashimg h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+.img-max-3 {
+    height: 3em;
+    margin-top: 1.5em;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .splashimg h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .splashimg h4 {
+         font-size: 18px;
+         line-height: 20px;
+     }
+    .splashimg-inner {
+        background: url( images/splashimg-rings-flat.jpg );
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position-x: 90%;
+        background-position-y: 50%;
+    }
+    .img-max-3 {
+        height: 1.5em;
+    }
+}
+@media (max-width: 479px) {
+    .splashimg {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .splashimg h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .splashimg h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+/*=========================== QUAL-FORM BLOCK ===================================*/
+.qual-form-block{
+    display: block;
+    margin: 14px;
+    color: #FFFFFF;
+}
+.qual-form-block .well-lg{
+    /*background-color: rgba(255, 255, 255, 0.2);*/
+}
+
+/*.qual-form-block label input:checked {*/
+    /*label {*/
+        /*background-color: #DD1144;*/
+    /*}*/
+/*}*/
+
+
+/*======================== QUALIFIER BLOCK  ===================================*/
+.qualifier-block {
+    align-content: center;
+}
+.qualifier-block button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    white-space: normal;
+}
+
+
+/*=========================== FORM BLOCK =============================================*/
+.main-form-block {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+    background-color:rgba(255,255,255,0.5);
+}
+.has-border {
+    background-color: #FFFFFF;
+    opacity: 0.3;
+    border-color: transparent;
+    border-radius: 8px;
+    border-width: thick;
+}
+@media (max-width: 979px) {
+    .main-form-block {
+        margin-top: 0px;
+    }
+}
+/*==================     Subscribe Form     ======================*/
+.subscribe-form {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+/*.subscribe-form label, input {*/
+.subscribe-form label {
+    display: block;
+    max-width: 410px;
+    width: 100%;
+    position: relative;
+    padding: 12px 17px 12px 17px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: white;
+    border: 1px solid lightgray;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.subscribe-form input {
+    display: block;
+    max-width: 300px;
+    position: relative;
+    padding: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: white;
+    border: 2px solid lightgray;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.subscribe-form a[data-type="submit"] {
+    padding: 12px 20px;
+    font-size: 19px;
+    line-height: 21px;
+}
+.subscribe-form label + a[data-type="submit"] {
+    margin-top: 10px;
+    margin-left: 6px;
+}
+@media (max-width: 979px) {
+    .subscribe-form label + a[data-type="submit"] {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+.error {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 10px;
+    line-height: 12px;
+    color: #f00;
+    overflow: hidden;
+    height: 0px;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+label.invalid .error {
+    height: 21px;
+}
+
+.success {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #38A46B;
+}
+
+@media (max-width: 479px) {
+    .subscribe-form label {
+        width: 100%;
+    }
+}
+
+/*================ VIDEO WRAPPER ============*/
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: visible;
+    max-width: 500px;
+    max-height: 300px;
+}
+.videowrapper iframe,
+.videowrapper object,
+.videowrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*================== BLURBS ==================*/
+.blurb-center {
+    align-content: center;
+}
