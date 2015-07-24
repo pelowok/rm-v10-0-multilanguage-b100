@@ -105,10 +105,10 @@
 </head>
 
 <body>
-<div class="container-fluid">
+<div id="page-container" class="container-fluid">
 
     <!--+++++++++++++++ BEGIN HEADER SECTION ++++++++++++++-->
-    <div class="container bg-white no-pad no-margin absolute-75">
+    <div id="page-header" class="container bg-white no-pad no-margin absolute-75">
         <div class="row>">
             <div class="brand-logo">
                 <img class="logo" src="images/MAXfocus_4color.png" alt=""/>
@@ -135,44 +135,46 @@
                     </h4>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-offset-8  ">
-                    <div class="well-lg main-form-block">
-                            <span>
-                                <div class="panel-heading img-centered">
-                                    <img class="img-half-size" src="images\MAXfocus_4color.png">
-                                </div>
-                                <div class="row">
-                                    <a href="#formDiv" class="arrow-toggle btn btn-warning btn-block btn-lg active collapsed" data-toggle="collapse">
-                                        Get your FREE 30-day Full Feature Trial &nbsp &nbsp
-                                        <span class="glyphicon glyphicon-collapse-up"></span>
-                                        <span class="glyphicon glyphicon-collapse-down"></span>
-                                    </a>
-                                </div>
-                            </span>
-                        <div id="formDiv" class="collapse">
-                            <form role="form" id="subscribe-form" class="subscribe-form">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="exampleInputName1"
-                                           placeholder="your name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                           placeholder="email address">
-                                </div>
-                                <div class="form-group">
-                                    <input type="string" class="form-control" id="exampleInputCompany1"
-                                           placeholder="company name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" id="exampleInputPhone1"
-                                           placeholder="Phone Number">
-                                </div>
-                                <button class="btn btn-lg btn-block btn-success " data-type="submit" href="">
-                                    Try Now
-                                    <span class="glyphicon glyphicon-arrow-right"></span>
-                                </button>
-                            </form>
+            <div id="form-container">
+                <div class="row">
+                    <div class="col-md-offset-8  ">
+                        <div class="well-lg main-form-block">
+                                <span>
+                                    <div class="panel-heading img-centered">
+                                        <img class="img-half-size" src="images\MAXfocus_4color.png">
+                                    </div>
+                                    <div class="row">
+                                        <a href="#formDiv" class="arrow-toggle btn btn-warning btn-block btn-lg active collapsed" data-toggle="collapse">
+                                            Get your FREE 30-day Full Feature Trial &nbsp &nbsp
+                                            <span class="glyphicon glyphicon-collapse-up"></span>
+                                            <span class="glyphicon glyphicon-collapse-down"></span>
+                                        </a>
+                                    </div>
+                                </span>
+                            <div id="formDiv" class="collapse">
+                                <form role="form" id="subscribe-form" class="subscribe-form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="exampleInputName1"
+                                               placeholder="your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                               placeholder="email address">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="string" class="form-control" id="exampleInputCompany1"
+                                               placeholder="company name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" id="exampleInputPhone1"
+                                               placeholder="Phone Number">
+                                    </div>
+                                    <button class="btn btn-lg btn-block btn-success " data-type="submit" href="">
+                                        Try Now
+                                        <span class="glyphicon glyphicon-arrow-right"></span>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,14 +198,24 @@
                     <div class="item active">
                         <!--<img class="first-slide" src="http://lorempixel.com/400/300" alt="First slide">-->
                         <div class="container first-slide carousel-inner">
-                            <div class="row pad-30">
-                                <span>
-                                    <div class="col-xs-offset-1 col-xs-4 text-right">
-                                        <img src="images/splashimg-sub-image.png">
-                                    </div>
+                            <div class="row pad-40">
+                                <span class="vanish-768">
+                                   <div class="col-xs-offset-1 col-xs-4 vcenter">
+                                       <img src="images/splashimg-sub-image.png">
+                                   </div>
                                     <div class="col-xs-5">
                                         <h2 class="text-left">
-                                        24/7 Remote Network Monitoring and Management
+                                            24/7 Remote Network Monitoring and Management
+                                        </h2>
+                                        <p>
+                                            MAX RemoteManagement provides Remote Network Monitoring software used by 10,000+ IT Support Companies, Consultants and MSPs worldwide.
+                                        </p>
+                                    </div>
+                                </span>
+                                <span class="pop-768">
+                                    <div class="col-xs-offset-1 col-xs-10">
+                                        <h2 class="text-left">
+                                            24/7 Remote Network Monitoring and Management
                                         </h2>
                                         <p>
                                             MAX RemoteManagement provides Remote Network Monitoring software used by 10,000+ IT Support Companies, Consultants and MSPs worldwide.
@@ -215,17 +227,27 @@
                     </div>
                     <div class="item">
                         <div class="container second-slide carousel-inner">
-                            <div class="row pad-30">
-                                <span>
-                                    <div class="col-xs-offset-1 col-xs-4 text-right">
-                                        <img src="images/splashimg-sub-image.png">
-                                    </div>
-                                    <div class="col-xs-5">
+                            <div class="row pad-40">
+                                <span class="vanish-768">
+                                    <div class="col-xs-offset-1  col-xs-5">
                                         <h2 class="text-left">
                                             How MAX RemoteManagement will help YOU
                                         </h2>
                                         <p>
-                                        It helps deliver increased uptime to customers by quick, easy monitoring of networking equipment and connectivity - leading to increased customer satisfaction and revenue for you.
+                                            It helps deliver increased uptime to customers by quick, easy monitoring of networking equipment and connectivity - leading to increased customer satisfaction and revenue for you.
+                                        </p>
+                                    </div>
+                                    <div class="col-xs-offset-1 col-xs-4 vcenter">
+                                        <img src="images/splashimg-sub-image.png">
+                                    </div>
+                                </span>
+                                <span class="pop-768">
+                                    <div class="col-xs-offset-1  col-xs-10">
+                                        <h2 class="text-left">
+                                            How MAX RemoteManagement will help YOU
+                                        </h2>
+                                        <p>
+                                            It helps deliver increased uptime to customers by quick, easy monitoring of networking equipment and connectivity - leading to increased customer satisfaction and revenue for you.
                                         </p>
                                     </div>
                                 </span>
@@ -259,102 +281,6 @@
 
 
         <!--END QUAL-FORM BLOCK-->
-
-        <!--BEGIN ABOUT LOGICNOW BLOCK-->
-
-
-        <div class="container-fluid bg-img-10">
-            <img src="http://placekitten.com/1080/1080">
-
-            <div class="col-xs-12">
-                <div class="container">
-                    <h2 class="text-center">
-                        About LogicNow
-                    </h2>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec neque ut enim imperdiet
-                        tempor. Integer sit amet justo in dui dignissim dignissim id non nibh. Curabitur varius est
-                        dolor, volutpat auctor mauris efficitur a. Suspendisse pretium sapien et urna sagittis
-                        venenatis. Praesent vulputate consequat enim at dapibus. Nunc rhoncus tellus sit amet arcu
-                        vulputate fermentum.
-                    </p>
-                </div>e
-            </div>
-        </div>
-
-        <!--END ABOUT LOGICNOW BLOCK-->
-
-        <!--BEGIN ABOUT TESTIMONIAL BLOCK-->
-
-
-        <div class="container-fluid bg-white">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-md-5">
-                        <!--<div class="container">-->
-                        <h3>Youtube</h3>
-
-                        <div class="videowrapper ">
-                            <iframe height="300" width="500" src="http://www.youtube.com/embed/m5Jmh9JKnyQ"
-                                    frameborder="0" allowfullscreen=""></iframe>
-                        </div>
-                        <!--</div>-->
-                    </div>
-                    <div class="col-md-7">
-                        <h2 class="text-left">
-                            What our customers say about MAX
-                        </h2>
-
-                        <p>
-                            Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
-                            procrastinate B2C users after installed base benefits. Dramatically visualize customer
-                            directed convergence without revolutionary ROI.
-                            Efficiently unleash cross-media information without cross-media value. Quickly maximize
-                            timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions
-                            without functional solutions.
-                            Completely synergize resource sucking relationships via premier niche markets.
-                            Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate
-                            resource-leveling customer service for state of the art customer service.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-5">
-                        <h3>Vimeo</h3>
-
-                        <div class="videowrapper well">
-                            <iframe src="http://player.vimeo.com/video/45417023" height="300" frameborder="0"
-                                    webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <h2 class="text-left">
-                            What our customers say about MAX
-                        </h2>
-
-                        <p>
-                            Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
-                            procrastinate B2C users after installed base benefits. Dramatically visualize customer
-                            directed convergence without revolutionary ROI.
-                            Efficiently unleash cross-media information without cross-media value. Quickly maximize
-                            timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions
-                            without functional solutions.
-                            Completely synergize resource sucking relationships via premier niche markets.
-                            Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate
-                            resource-leveling customer service for state of the art customer service.
-                        </p>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-        <!--END ABOUT TESTIMONIAL BLOCK-->
-
-
 
         <div class="container-fluid bg-white">
             <div class="container">
@@ -421,6 +347,31 @@
                 <!-- /.row -->
             </div>
         </div>
+
+    <!--BEGIN ABOUT LOGICNOW BLOCK-->
+
+
+    <div class="container-fluid bg-img-10">
+        <img src="http://placekitten.com/1080/1080">
+
+        <div class="col-xs-12">
+            <div class="container">
+                <h2 class="text-center">
+                    About LogicNow
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec neque ut enim imperdiet
+                    tempor. Integer sit amet justo in dui dignissim dignissim id non nibh. Curabitur varius est
+                    dolor, volutpat auctor mauris efficitur a. Suspendisse pretium sapien et urna sagittis
+                    venenatis. Praesent vulputate consequat enim at dapibus. Nunc rhoncus tellus sit amet arcu
+                    vulputate fermentum.
+                </p>
+            </div>e
+        </div>
+    </div>
+
+    <!--END ABOUT LOGICNOW BLOCK-->
 
     </div>
 

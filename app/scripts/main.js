@@ -39,3 +39,24 @@ function scrollTest(elID)
     var dest = document.getElementById(elID);
     scrollTo(dest.offsetTop, 500);
 }
+
+$(document).ready(function () {
+
+    var nav = ( $("#form-container") );
+
+    $(window).scroll(function () {
+        console.log($(document).scrollTop());
+        if ($(document).scrollTop() >= 412) {
+            nav.css('position', 'fixed');
+            nav.css('top', '0');
+            nav.css('right', '10px');
+            nav.css('opacity', '1');
+            nav.css('z-index', '1000');
+        } else {
+            nav.css('top','412px');
+            nav.css('right','10px');
+            nav.css('position', 'absolute');
+        }
+    });
+});
+

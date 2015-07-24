@@ -21,6 +21,9 @@ img {
     max-width: 50%;
     max-height: 50%;
 }
+.img-static {
+    max-width: none;
+}
 
 .p-condensed {
     line-height: 1.2em;
@@ -63,8 +66,47 @@ fieldset[disabled] .btn-nude:focus {
     text-decoration: none;
 }
 
+@media (max-width: 1023px) {
+    .vanish-1024 {
+        display: none;
+    }
+    .pop-1024 {
+        display: block;
+    }
+}
+@media (min-width: 1024px) {
+    .vanish-1024 {
+        display: block;
+    }
+    .pop-1024 {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .vanish-768 {
+        display: none;
+    }
+    .pop-768 {
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    .vanish-768 {
+        display: block;
+    }
+    .pop-768 {
+        display: none;
+    }
+}
 
 /*================= CUSTOM DECORATION ====================*/
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 .bg-blue-primary, .bg-blue {
     background: #0079c1;
@@ -100,12 +142,10 @@ fieldset[disabled] .btn-nude:focus {
     background: #FFFFFF;
     color: #666666;
 }
-.bg-img-1 {
-    background-image: url("http://lorempixel.com/1920/1080/");
+.bg-cover-norepeat {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
-    color: #FFFFFF;
 }
 .bg-img-10 {
     color: #FFFFFF;
@@ -140,6 +180,12 @@ fieldset[disabled] .btn-nude:focus {
 .pad-30 {
     padding: 30px;
 }
+.pad-40 {
+    padding: 40px;
+}
+.pad-50 {
+    padding: 50px;
+}
 .no-margin {
     margin-top: 0;
     margin-left: 0;
@@ -153,7 +199,7 @@ fieldset[disabled] .btn-nude:focus {
     height: 100px;
     width: 100%;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 500;
 }
 /*=======================================================
                        Components
