@@ -14,6 +14,13 @@ img {
     max-width: 100%;
     height: auto;
 }
+.img-centered {
+    text-align: center;
+}
+.img-half-size {
+    max-width: 50%;
+    max-height: 50%;
+}
 
 .p-condensed {
     line-height: 1.2em;
@@ -129,6 +136,9 @@ fieldset[disabled] .btn-nude:focus {
     padding-left: 0;
     padding-bottom: 0;
     padding-right: 0;
+}
+.pad-30 {
+    padding: 30px;
 }
 .no-margin {
     margin-top: 0;
@@ -304,10 +314,12 @@ img + .brand-name {
 /*=========================== FORM BLOCK =============================================*/
 .main-form-block {
     position: absolute;
-    margin-top: 10px;
+    margin-top: -80px;
     margin-left: 20px;
     text-align: center;
-    background-color:rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.9);
+    z-index: 1000;
+    right: 20px;
 }
 .has-border {
     background-color: #FFFFFF;
@@ -316,9 +328,19 @@ img + .brand-name {
     border-radius: 8px;
     border-width: thick;
 }
-@media (max-width: 979px) {
+@media (max-width: 989px) {
     .main-form-block {
         margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        right: auto;
+        left: auto;
+    }
+    .carousel-control .glyphicons-chevron-left,
+    .carousel-control .glyphicons-chevron-right {
+        display: none;
     }
 }
 /*==================     Subscribe Form     ======================*/
@@ -438,4 +460,14 @@ label.invalid .error {
 /*================== BLURBS ==================*/
 .blurb-center {
     align-content: center;
+}
+
+/*================= ICON FUNCTIONS =============*/
+.arrow-toggle .glyphicon-collapse-up,
+.arrow-toggle.collapsed .glyphicon-collapse-down {
+    display: inline-block;
+}
+.arrow-toggle.collapsed .glyphicon-collapse-up,
+.arrow-toggle .glyphicon-collapse-down {
+    display: none;
 }

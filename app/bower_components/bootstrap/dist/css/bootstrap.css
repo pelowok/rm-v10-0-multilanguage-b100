@@ -45,6 +45,7 @@ html {
 
 body {
   margin: 0;
+  max-width: 1530px;
 }
 
 a {
@@ -5726,7 +5727,7 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .panel-heading {
-  padding: 10px 15px;
+  /*padding: 10px 15px;*/
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
@@ -6344,6 +6345,10 @@ button.close {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  min-height: 325px;
+  max-height: 325px;
 }
 
 .carousel-inner > .item {
@@ -6409,7 +6414,7 @@ button.close {
   color: #ffffff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  opacity: 0.5;
+  opacity: 0.75;
   filter: alpha(opacity=50);
 }
 
