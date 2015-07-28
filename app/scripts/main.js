@@ -6,12 +6,12 @@ function toggleContactInfo(div)
     var btn = document.getElementById('btnContact');
 
     if (className.indexOf("contactus") > -1) {
-        div.className = "col-xs-6 brand-contact contactinfo";
+        div.className = "col-xs-10 brand-contact contactinfo";
         btn.innerHTML = 'US (123)123-1234';
 
     }
     else {
-        div.className = "col-xs-6 brand-contact contactus";
+        div.className = "col-xs-10 brand-contact contactus";
         btn.innerHTML = 'Contact Us';
     }
 }
