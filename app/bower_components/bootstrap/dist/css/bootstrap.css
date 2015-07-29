@@ -5911,6 +5911,11 @@ a.list-group-item.active:focus .list-group-item-text {
   border-radius: 6px;
 }
 
+.well-md {
+  padding: 15px;
+  border-radius: 4px;
+}
+
 .well-sm {
   padding: 9px;
   border-radius: 3px;
@@ -6470,6 +6475,7 @@ button.close {
   margin-top: -10px;
   margin-left: -10px;
   font-family: serif;
+  display: none;
 }
 
 .carousel-control .icon-prev:before {
@@ -6531,8 +6537,8 @@ button.close {
 }
 
 @media screen and (min-width: 768px) {
-  .carousel-control .glyphicons-chevron-left,
-  .carousel-control .glyphicons-chevron-right,
+  /*.carousel-control .glyphicons-chevron-left,*/
+  /*.carousel-control .glyphicons-chevron-right,*/
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
     width: 30px;

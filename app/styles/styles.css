@@ -29,11 +29,16 @@ img {
     line-height: 1.2em;
 }
 
+.btn-nude:focus {
+
+}
+
 .btn-nude {
     font-weight: 500;
     color: #333333;
     cursor: hand;
     border-radius: 0;
+    outline: none;
 }
 
 .btn-nude,
@@ -50,6 +55,7 @@ fieldset[disabled] .btn-nude {
 .btn-nude:focus,
 .btn-nude:active {
     border-color: transparent;
+    outline: none;
 }
 
 .btn-nude:hover,
@@ -224,6 +230,7 @@ img + .brand-name {
     text-align: left;
 }
 .brand-contact{
+    margin-top: -70px;
     padding-right: 2em;
     letter-spacing: 2px;
     text-transform: none;
@@ -359,13 +366,13 @@ img + .brand-name {
 
 /*=========================== FORM BLOCK =============================================*/
 .main-form-block {
-    position: absolute;
-    margin-top: -80px;
-    margin-left: 20px;
     text-align: center;
     background-color:rgba(255,255,255,0.9);
     z-index: 1000;
-    right: 20px;
+    width: 45%;
+    position: fixed;
+    right: 10px;
+    left: auto;
 }
 .has-border {
     background-color: #FFFFFF;
@@ -374,19 +381,37 @@ img + .brand-name {
     border-radius: 8px;
     border-width: thick;
 }
-@media (max-width: 989px) {
+/*@media (max-width: 989px) {*/
+@media (min-width: 400px) {
     .main-form-block {
-        margin-top: 0px;
+        margin-top: -150px;
         margin-bottom: 10px;
         margin-left: 10px;
         margin-right: 10px;
-        position: relative;
-        right: auto;
-        left: auto;
     }
-    .carousel-control .glyphicons-chevron-left,
-    .carousel-control .glyphicons-chevron-right {
-        display: none;
+}
+@media (min-width: 768px) {
+    .main-form-block {
+        /*width: 400px;*/
+        margin-top: -60px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        /*position: absolute;*/
+        /*right: 5%;*/
+        /*left: auto;*/
+    }
+}
+@media (min-width: 989px) {
+    .main-form-block {
+        /*width: 500px;*/
+        margin-top: -80px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        /*position: absolute;*/
+        /*right: 10px;*/
+        /*left: auto;*/
     }
 }
 /*==================     Subscribe Form     ======================*/
@@ -399,7 +424,7 @@ img + .brand-name {
 /*.subscribe-form label, input {*/
 .subscribe-form label {
     display: block;
-    max-width: 410px;
+    max-width: 310px;
     width: 100%;
     position: relative;
     padding: 12px 17px 12px 17px;
@@ -516,4 +541,10 @@ label.invalid .error {
 .arrow-toggle.collapsed .glyphicon-collapse-up,
 .arrow-toggle .glyphicon-collapse-down {
     display: none;
+}
+/*Turn off arrow glyph visibility on carousel*/
+/*Navigation remains functional*/
+.right.carousel-control, .left.carousel-control {
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
 }
