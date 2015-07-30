@@ -46,16 +46,18 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         console.log($(document).scrollTop());
-        if ($(document).scrollTop() >= 412) {
+        if ($(document).scrollTop() >= 460) {
             nav.css('position', 'fixed');
-            nav.css('top', '0');
-            nav.css('right', '10px');
+            nav.css('top', '-3%');
+            nav.css('right', '5%');
             nav.css('opacity', '1');
             nav.css('z-index', '1000');
         } else {
-            nav.css('top','412px');
-            nav.css('right','10px');
+            nav.css('top','auto');
+            //nav.css('top','412px');
+            nav.css('right','5%');
             nav.css('position', 'absolute');
+            nav.css('z-index', '1000');
         }
     });
 });
