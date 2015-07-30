@@ -49,18 +49,36 @@ $(document).ready(function () {
     $(window).scroll(function () {
         console.log($(document).scrollTop());
         if ($(document).scrollTop() >= 460) {
+            //nav.css('position', 'fixed');
+            //nav.css('top', '-3%');
+            //nav.css('right', 'auto');
+            //nav.css('opacity', '1');
+            //nav.css('z-index', '1000');
+
+            nav.css('text-align','center');
+            nav.css('background-color', 'rgba(240,240,240,1.0)');
+            nav.css('z-index', '1000');
+            nav.css('width', '380px');
             nav.css('position', 'fixed');
-            nav.css('top', '-3%');
-            nav.css('right', '5%');
-            nav.css('opacity', '1');
-            nav.css('z-index', '1000');
+
+            nav.css('top', '0');
+
         } else {
-            nav.css('top','auto');
-            //nav.css('top','412px');
-            nav.css('right','5%');
-            nav.css('position', 'absolute');
+            //nav.css('top','auto');
+            //nav.css('right','auto');
+            //nav.css('position', 'absolute');
+            //nav.css('z-index', '1000');
+
+            nav.css('text-align','center');
+            nav.css('background-color', 'rgba(240,240,240,1.0)');
             nav.css('z-index', '1000');
+            nav.css('width', '380px');
+            nav.css('position', 'absolute');
+
+
         }
     });
 });
+
+
 
