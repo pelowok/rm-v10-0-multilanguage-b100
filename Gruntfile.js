@@ -20,6 +20,24 @@ module.exports = function (grunt) {
   };
 
   grunt.initConfig({
+    'ftp-deploy' : {
+      build: {
+        auth: {
+          host: 'zipl.org',
+          port: 21,
+          authKey: 'key1'
+        }
+        ,
+        src: 'app/',
+        dest: '/rm-v10-0-b100',
+        exclusions: [
+          '.DS_Store',
+          '.gitignore',
+          '.ftppass'
+        ]
+      }
+    },
+
     yeoman: yeomanConfig,
     watch: {
       coffee: {
@@ -137,14 +155,14 @@ module.exports = function (grunt) {
     // not used since Uglify task does concat,
     // but still available if needed
     /*concat: {
-      dist: {}
-    },*/
+     dist: {}
+     },*/
     // not enabled since usemin task does concat and uglify
     // check index.html to edit your build targets
     // enable this task if you prefer defining your build targets here
     /*uglify: {
-      dist: {}
-    },*/
+     dist: {}
+     },*/
     rev: {
       dist: {
         files: {
@@ -204,14 +222,14 @@ module.exports = function (grunt) {
       dist: {
         options: {
           /*removeCommentsFromCDATA: true,
-          // https://github.com/yeoman/grunt-usemin/issues/44
-          //collapseWhitespace: true,
-          collapseBooleanAttributes: true,
-          removeAttributeQuotes: true,
-          removeRedundantAttributes: true,
-          useShortDoctype: true,
-          removeEmptyAttributes: true,
-          removeOptionalTags: true*/
+           // https://github.com/yeoman/grunt-usemin/issues/44
+           //collapseWhitespace: true,
+           collapseBooleanAttributes: true,
+           removeAttributeQuotes: true,
+           removeRedundantAttributes: true,
+           useShortDoctype: true,
+           removeEmptyAttributes: true,
+           removeOptionalTags: true*/
         },
         files: [{
           expand: true,
@@ -304,5 +322,9 @@ module.exports = function (grunt) {
     'jshint',
     'test',
     'build'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'ftp-deploy:build'
   ]);
 };

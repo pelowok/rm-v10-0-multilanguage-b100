@@ -2,6 +2,9 @@
 ### Example user template template
 ### Example user template
 
+# ftp keys
+.ftppass
+
 # IntelliJ project files
 .idea
 *.iml
