@@ -236,6 +236,18 @@ img + .brand-name {
     text-transform: none;
     text-align: right;
 }
+.contactinfo {
+    font: "Arial";
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    color: #333333;
+}
 @media (min-width: 870px) {
     .brand-logo img.logo{
         max-width: 240px;
@@ -367,7 +379,7 @@ img + .brand-name {
 /*=========================== FORM BLOCK =============================================*/
 .main-form-block {
     text-align: center;
-    background-color:rgba(255,255,255,0.9);
+    background-color:rgba(240,240,240,1.0);
     z-index: 1000;
     /*width: 45%;*/
     width: 380px;
@@ -551,4 +563,7 @@ label.invalid .error {
 }
 .glyph-lg {
     font-size: 3.0em;
+}
+.glyph-xl {
+    font-size: 7.0em;
 }
