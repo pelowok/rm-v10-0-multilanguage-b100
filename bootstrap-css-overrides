@@ -1,0 +1,95 @@
+: LINE 4 :
+
+	body {
+	  max-width: 1530px;
+	}
+
+: LINES 10, 11, 12 :
+
+	.btn:focus {
+	  /*outline: thin dotted;*/
+	  /*outline: 5px auto -webkit-focus-ring-color;*/
+	  /*outline-offset: -2px;*/
+	}
+
+: LINE 24 :
+
+	.btn-default:hover,
+	.btn-default:focus,
+	.btn-default:active,
+	.btn-default.active,
+	.open .dropdown-toggle.btn-default {
+	  color: #333333;
+	  background-color: #ebebeb;
+	  /*border-color: #adadad;*/
+	}
+
+: LINE 30 :
+
+	.panel-heading {
+	  /*padding: 10px 15px;*/
+	  border-bottom: 1px solid transparent;
+	  border-top-right-radius: 3px;
+	  border-top-left-radius: 3px;
+	}
+
+: LINE 38, 39, 40, 41
+
+	.well-md {
+	  padding: 15px;
+	  border-radius: 4px;
+	}
+
+: LINES 48, 49, 50, 51  :
+	.carousel-inner {
+	  position: relative;
+	  width: 100%;
+	  overflow: hidden;
+	  margin-bottom: 30px;
+	  padding-bottom: 20px;
+	  min-height: 325px;
+	  max-height: 325px;
+	}
+
+: LINE  66 :
+
+	.carousel-control {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  width: 15%;
+	  font-size: 20px;
+	  color: #ffffff;
+	  text-align: center;
+	  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+	  opacity: 0.75;
+	  filter: alpha(opacity=50);
+	}
+
+: LINE  79 :
+
+	.carousel-control .icon-prev,
+	.carousel-control .icon-next {
+	  width: 20px;
+	  height: 20px;
+	  margin-top: -10px;
+	  margin-left: -10px;
+	  font-family: serif;
+	  display: none;
+	}
+
+: LINES 85, 86 :
+
+	@media screen and (min-width: 768px) {
+	  /*.carousel-control .glyphicons-chevron-left,*/
+	  /*.carousel-control .glyphicons-chevron-right,*/
+	  .carousel-control .icon-prev,
+	  .carousel-control .icon-next {
+	    width: 30px;
+	    height: 30px;
+	    margin-top: -15px;
+	    margin-left: -15px;
+	    font-size: 30px;
+	  }
+
