@@ -316,17 +316,17 @@ img + .brand-name {
 .brand-contact{
     margin-top: -70px;
     padding-right: 2em;
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
     text-transform: none;
     text-align: right;
 }
 .contactinfo {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: inline-block;
-    padding: 6px 12px;
+    padding: 0.5em 1em;
     margin-bottom: 0;
     font-size: 14px;
-    line-height: 1.428571429;
+    line-height: 1.428571429em;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;

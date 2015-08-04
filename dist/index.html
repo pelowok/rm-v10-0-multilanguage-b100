@@ -1,87 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-        <!--TODO is this vendor-checking for bootstrap part of teh existing header-cludes, or do I need to add it?-->
-            <!--[if lt IE 7]>
-            <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-            <!--[if IE 7]>
-            <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-            <!--[if IE 8]>
-            <html class="no-js lt-ie9"> <![endif]-->
-            <!--[if gt IE 8]><!-->
-            <html class="no-js"> <!--<![endif]-->
-
 <head>
-
-    <!--TODO !!!!!!!!!! UNCOMMENT THIS SECTION !!!!!!!!!!!!!!!!!!!!-->
-    <!--&lt;!&ndash;=================  CUT and PASTE from existing page ===================&ndash;&gt;-->
-
-    <!--{{ standard_header_includes }}-->
-
-
-    <!--&lt;!&ndash;========================  BINDINGS from existing landing page ===============&ndash;&gt;-->
-
-    <!--{% choice "language" label="Choose Language", value="English", choices="English,French,German,Spanish,Italian,Brazil-pt", export_to_template_context=True %}-->
-
-    <!--{% boolean "geo_locate" label="Use Geo Location", value="", export_to_template_context=True %}-->
-
-    <!--{% image "sticker_image" label="Sticker Image", no_wrapper=True, src="", height="None", width="None", export_to_template_context=True %}-->
-    <!--{% text "sticker_image_position" label="Sticker Image Position from left (px)", value="0", export_to_template_context=True %}-->
-
-    <!--{% boolean "show_image_1" label="Show Image Area 1", value="", export_to_template_context=True %}-->
-    <!--{% image "main_image_1" label="Main Image 1", no_wrapper=True, src="http://cdn2.hubspot.net/hub/120076/file-2508570779-jpg/max_extra/RM/V5/imgs/banner.jpg", height="None", width="None", export_to_template_context=True %}-->
-    <!--{% boolean "show_text_over_image_1" label="Show Text On Image 1", value="", export_to_template_context=True %}-->
-    <!--{% choice "text_over_image_1_position" label="Text Position", value="Top", choices="Top,Bottom", export_to_template_context=True %}-->
-    <!--{% text "text_over_image_1" label="Text Over Image 1", value="Text over Image 1", export_to_template_context=True %}-->
-    <!--{% text "main_image_1_title" label="Main Image 1 - Title", value="GFI MAX Managed Online Backup", export_to_template_context=True %}-->
-    <!--{% text "main_image_1_text" label="Main Image 1 - Text", value=" - the number one solution for your customers' backup needs offering the busy IT Support Company a comprehensive service to help you provide a reliable, automatic, secure offsite backup service.", export_to_template_context=True %}-->
-
-    <!--{% boolean "show_image_2" label="Show Image Area 2", value="", export_to_template_context=True %}-->
-    <!--{% image "main_image_2" label="Main Image 2", no_wrapper=True, src="http://cdn2.hubspot.net/hub/120076/file-2508570779-jpg/max_extra/RM/V5/imgs/banner.jpg", height="None", width="None", export_to_template_context=True %}-->
-    <!--{% boolean "show_text_over_image_2" label="Show Text On Image 2", value="", export_to_template_context=True %}-->
-    <!--{% choice "text_over_image_2_position" label="Text Position", value="Top", choices="Top,Bottom", export_to_template_context=True %}-->
-    <!--{% text "text_over_image_2" label="Text Over Image 2", value="Text over Image 2", export_to_template_context=True %}-->
-    <!--{% text "main_image_2_title" label="Main Image 2 - Title", value="GFI MAX Managed Online Backup", export_to_template_context=True %}-->
-    <!--{% text "main_image_2_text" label="Main Image 2 - Text", value=" - the number one solution for your customers' backup needs offering the busy IT Support Company a comprehensive service to help you provide a reliable, automatic, secure offsite backup service.", export_to_template_context=True %}-->
-
-    <!--{% boolean "show_image_3" label="Show Image Area 3", value="", export_to_template_context=True %}-->
-    <!--{% image "main_image_3" label="Main Image 3", no_wrapper=True, src="http://cdn2.hubspot.net/hub/120076/file-2508570779-jpg/max_extra/RM/V5/imgs/banner.jpg", height="None", width="None", export_to_template_context=True %}-->
-    <!--{% boolean "show_text_over_image_3" label="Show Text On Image 3", value="", export_to_template_context=True %}-->
-    <!--{% choice "text_over_image_3_position" label="Text Position", value="Top", choices="Top,Bottom", export_to_template_context=True %}-->
-    <!--{% text "text_over_image_3" label="Text Over Image 3", value="Text over Image 3", export_to_template_context=True %}-->
-    <!--{% text "main_image_3_title" label="Main Image 3 - Title", value="GFI MAX Managed Online Backup", export_to_template_context=True %}-->
-    <!--{% text "main_image_3_text" label="Main Image 3 - Text", value=" - the number one solution for your customers' backup needs offering the busy IT Support Company a comprehensive service to help you provide a reliable, automatic, secure offsite backup service.", export_to_template_context=True %}-->
-
-    <!--{% boolean "show_image_4" label="Show Image Area 4", value="", export_to_template_context=True %}-->
-    <!--{% image "main_image_4" label="Main Image 4", no_wrapper=True, src="http://cdn2.hubspot.net/hub/120076/file-2508570779-jpg/max_extra/RM/V5/imgs/banner.jpg", height="None", width="None", export_to_template_context=True %}-->
-    <!--{% boolean "show_text_over_image_4" label="Show Text On Image 4", value="", export_to_template_context=True %}-->
-    <!--{% choice "text_over_image_4_position" label="Text Position", value="Top", choices="Top,Bottom", export_to_template_context=True %}-->
-    <!--{% text "text_over_image_4" label="Text Over Image 4", value="Text over Image 4", export_to_template_context=True %}-->
-    <!--{% text "main_image_4_title" label="Main Image 4 - Title", value="GFI MAX Managed Online Backup", export_to_template_context=True %}-->
-    <!--{% text "main_image_4_text" label="Main Image 4 - Text", value=" - the number one solution for your customers' backup needs offering the busy IT Support Company a comprehensive service to help you provide a reliable, automatic, secure offsite backup service.", export_to_template_context=True %}-->
-
-    <!--{% boolean "show_main_body" label="Show Main Body Test", value="", export_to_template_context=True %}-->
-    <!--{% raw_html "main_body" label="Main Body", value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis augue est, a rutrum mi condimentum et. Nulla condimentum nulla et rhoncus malesuada. Nulla commodo sed turpis eu suscipit. Maecenas suscipit pharetra cursus. Suspendisse mattis augue vitae lorem porta malesuada. Cras egestas, tellus nec blandit auctor, urna nunc pulvinar quam, non suscipit ante nunc eget purus. Nullam vehicula lorem non dui tristique, quis viverra justo porta. Donec eget gravida nunc. Sed sed ipsum nec sem molestie vulputate sit amet ac quam. ", export_to_template_context=True %}-->
-
-    <!--{% boolean "show_pointslist_title" label="Show Benefits Title", value="", export_to_template_context=True %}-->
-    <!--{% raw_html "pointslist_title" label="Benefits Title", value="GFI MAX Remote Management offers loads of benefits including:", export_to_template_context=True %}-->
-
-    <!--{% text "form_title" label="Form Title", value="Try GFI MAX Backup FREE for 30 days", export_to_template_context=True %}-->
-
-    <!--{% text "icon_box_1" label="Icon Box 1 Title", value="Comprehensive but not complex", export_to_template_context=True %}-->
-    <!--{% raw_html "icon_box_1_main_text" label="Icon Box 1 Main Text", value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis augue est, a rutrum mi condimentum et.", export_to_template_context=True %}-->
-
-    <!--{% text "icon_box_2" label="Icon Box 2 Title", value="Comprehensive but not complex", export_to_template_context=True %}-->
-    <!--{% raw_html "icon_box_2_main_text" label="Icon Box 2 Main Text", value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis augue est, a rutrum mi condimentum et.", export_to_template_context=True %}-->
-
-    <!--{% text "icon_box_3" label="Icon Box 3 Title", value="Comprehensive but not complex", export_to_template_context=True %}-->
-    <!--{% raw_html "icon_box_3_main_text" label="Icon Box 3 Main Text", value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis augue est, a rutrum mi condimentum et.", export_to_template_context=True %}-->
-
-    <!--{% text "icon_box_4" label="Icon Box 4 Title", value="Comprehensive but not complex", export_to_template_context=True %}-->
-    <!--{% raw_html "icon_box_4_main_text" label="Icon Box 4 Main Text", value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis augue est, a rutrum mi condimentum et.", export_to_template_context=True %}-->
-
-    <!--{% boolean "override_under_form" label="Override under submit button text", value="", export_to_template_context=True %}-->
-    <!--{% text "under_form_override_text" label="Under Form Override Text", value="", export_to_template_context=True %}-->
 
     <!--============================ META TAGS =================================-->
     <meta charset="utf-8">
@@ -93,11 +13,11 @@
     <title>{{ page_meta.html_title }}</title>
 
 
-    <!-- TODO Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="https://cdn.maxfocus.com/max/s3fs-public/maxfocus_favicon.ico" type="image/vnd.microsoft.icon">
 
     <!--=================== STYLE SHEET(S) ==========================-->
-    <link rel="stylesheet" href="styles/2db65e9c.main.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link type="text/css" rel="stylesheet" href="styles/d670ee28.main.css">
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
 
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -108,14 +28,15 @@
 <div id="page-container" class="container-fluid">
 
     <!--+++++++++++++++ BEGIN HEADER SECTION ++++++++++++++-->
-    <div id="page-header" class="container bg-white no-pad no-margin absolute-75">
-        <div class="row>">
+    <div id="page-header" class="container bg-white">
+    <!--<div id="page-header" class="container bg-white no-pad no-margin absolute-75">-->
+        <div class="row">
             <div class="brand-logo">
-                <img class="logo" src="images/276a23eb.MAXfocus_4color.png" alt="">
+                <img class="logo" src="http://cdn2.hubspot.net/hubfs/120076/content-bucket/rm-v10-0-pcc/images/276a23eb.MAXfocus_4color.png" alt="">
                 <br>
                 <div class="row">
                     <div class="col-xs-12 brand-contact contactus">
-                    <!--<div class="col-xs-12 brand-contact contactus" onclick="toggleContactInfo(this)">-->
+                        <!--<div class="col-xs-12 brand-contact contactus" onclick="toggleContactInfo(this)">-->
                         <!--<button id="btnContact" class="btn-nude " >Contact Us</button>-->
                         <div class="contactinfo">
                             Need assistance?<br>
@@ -129,26 +50,24 @@
 
     <!--+++++++++++++++ END HEADER SECTION ++++++++++++++-->
 
+    <!--+++++++++++++++ END HEADER SECTION ++++++++++++++-->
+
 
     <!--BEGIN HERO SECTION-->
-    <div class="splashimg" style="background-image: url('/images/dc8f115f.img90.jpg')">
-    <!--<div class="splashimg" style="background-image: url('/images/4933163a.img000062805858.jpg')">-->
+    <div class="splashimg" style="background-image: url('images/dc8f115f.img90.jpg')">
         <div class="container">
-            <div class="row">
-                <div class="splashimg-header">
-                    <h2><span class="col-xs-10">Remote Network Monitoring & Management</span></h2>
-                    <h4><span class="col-xs-6">LogicNow's RMM software enables businesses like yours to monitor and manage networks remotely and securely, 24x7.</span>
-                    </h4>
-                </div>
-            </div>
-            <div id="form-container">
+            <div class="splashimg-header">
                 <div class="row">
-                    <!--<div class="col-lg-offset-8">-->
-                    <div class="col-lg-push-8">
-                        <div class="well-lg main-form-block">
-                                <!--<span>-->
+                    <span class="col-xs-push-1 col-xs-7 text-center"><h2>Remote Network Monitoring & Management</h2></span>
+                </div>
+                <div class="row">
+                    <span class="col-xs-push-2 col-xs-5 text-center"><h4>LogicNow's RMM software enables businesses like yours to monitor and manage networks remotely and securely, 24x7.</h4></span>
+                </div>
+                <div class="row">
+                    <div class="col-sm-push-6 col-sm-3 text-right">
+                        <div class="well-lg main-form-block" id="form-container">
                                     <div class="panel-heading img-centered">
-                                        <img class="img-centered" src="images\MAXfocus_4color.png">
+                                        <img class="img-centered" src="images/276a23eb.MAXfocus_4color.png">
                                     </div>
                                     <div class="row">
                                         <a href="#formDiv" class="arrow-toggle btn btn-warning btn-block btn-lg active collapsed" data-toggle="collapse">
@@ -158,36 +77,38 @@
                                             <span class="glyphicon glyphicon-collapse-down hidden"></span>
                                         </a>
                                     </div>
-                                <!--</span>-->
                             <div id="formDiv" class="collapse">
                                 <form role="form" id="subscribe-form" class="subscribe-form">
-                                    <div class="dropdown">
-                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">United States</a></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another country</a></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                        </ul>
+                                    <br>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option value="one">United States</option>
+                                            <option value="two">other country A</option>
+                                            <option value="three">other country B</option>
+                                            <option value="four">other country C</option>
+                                            <option value="five">other country D</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="exampleInputName1" placeholder="company name">
+                                        <input type="text" class="form-control" id="strInputName" placeholder="company name">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="contact name">
+                                        <input type="text" class="form-control" id="strInputEmail" placeholder="contact name">
                                     </div>
                                     <div class="form-group">
-                                        <input type="string" class="form-control" id="exampleInputCompany1" placeholder="contact email">
+                                        <input type="text" class="form-control" id="strInputCompany" placeholder="contact email">
                                     </div>
                                     <div class="form-group">
-                                        <input type="tel" class="form-control" id="exampleInputPhone1" placeholder="city">
+                                        <input type="text" class="form-control" id="strInputCity" placeholder="city">
                                     </div>
                                     <div class="form-group">
-                                        <input type="tel" class="form-control" id="exampleInputPhone1" placeholder="post/zip code">
+                                        <input type="text" class="form-control" id="strInputPostCode" placeholder="post/zip code">
                                     </div>
                                     <div class="form-group">
-                                        <input type="tel" class="form-control" id="exampleInputPhone1" placeholder="phone number">
+                                        <input type="text" class="form-control" id="strInputPhone" placeholder="phone number">
                                     </div>
                                     <div class="form-group">
-                                        <input type="tel" class="form-control" id="exampleInputPhone1" placeholder="website URL">
+                                        <input type="text" class="form-control" id="strInputURL" placeholder="website URL">
                                     </div>
                                     <button class="btn btn-lg btn-block btn-success" data-type="submit" href="">
                                         Try Now
@@ -203,6 +124,7 @@
                             </div>
                         </div>
                     </div>
+                <!--</div>-->
                 </div>
             </div>
         </div>
@@ -210,23 +132,27 @@
 
     <!--END HERO SECTION-->
 
+    <div class="row pad-50 text-center">
+        <br>
+        <img src="http://cdn2.hubspot.net/hub/120076/file-2508565774-jpg/max_extra/RM/V5/imgs/rm_v5_awards.jpg">
+        <br>
+    </div>
+
     <!--BEGIN MAIN CALL TO ACTION SECTION-->
-    <div class="row bg-blue container-fluid">
-        <div class="col-xs-12">
+    <div class="row bg-blue container-fluid text-center">
+        <div class="col-xs-12 text-left">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <!--<img class="first-slide" src="http://lorempixel.com/400/300" alt="First slide">-->
                         <div class="container first-slide carousel-inner">
-                            <div class="row pad-40">
+                            <div class="row mar-40">
                                 <span class="vanish-768">
-                                   <div class="col-xs-offset-1 col-xs-6 vcenter">
+                                   <div class="col-xs-offset-1 col-xs-6 text-center">
                                        <img src="images/f4ab3b04.img97.png">
                                    </div>
                                     <div class="col-xs-5">
@@ -238,7 +164,7 @@
                                         </p>
                                     </div>
                                 </span>
-                                <span class="pop-768">
+                                <span class="pop-768 pad-20 mar-20">
                                     <div class="col-xs-offset-1 col-xs-10">
                                         <h2 class="text-left">
                                             24/7 Remote Network Monitoring and Management
@@ -254,9 +180,9 @@
 
                     <div class="item">
                         <div class="container second-slide carousel-inner">
-                            <div class="row pad-40">
+                            <div class="row mar-40">
                                 <span class="vanish-768">
-                                   <div class="col-xs-offset-1 col-xs-6 vcenter">
+                                   <div class="col-xs-offset-1 col-xs-6 textcenter">
                                        <img src="images/bbea4d13.img07.png">
                                    </div>
                                     <div class="col-xs-5">
@@ -268,7 +194,7 @@
                                         </p>
                                     </div>
                                 </span>
-                                <span class="pop-768">
+                                <span class="pop-768 pad-20 mar-20">
                                     <div class="col-xs-offset-1 col-xs-10">
                                         <h2 class="text-left">
                                             How MAX RemoteManagement will help YOU
@@ -297,15 +223,9 @@
                     </span>
                 </div>
             </div>
-
-            <!-- /.carousel -->
-
         </div>
     </div>
-    <!-- Carousel
-================================================== -->
-
-
+    <!-- Carousel================================================== -->
 
         <!--END QUAL-FORM BLOCK-->
 
@@ -315,91 +235,34 @@
                 <!-- two columns of text below the carousel -->
                 <div class="row">
                     <div class="col-sm-6 well-lg text-center">
-
                         <span class="glyphicon glyph-xl glyphicon-stats"></span>
-                        <!--<img class="img-circle" src="http://lorempixel.com/140/140" alt="Generic placeholder image" width="140" height="140">-->
-
                         <h2>One Single Dashboard</h2>
-
                         <p>Shows status across all customer sites and equipment. Monitor/manage Connectivity - IP responding, ports open/closed, website responding; SNMP - Pre-defined and user-defined checks for NAS, UPS, switches, etc.</p>
-
-                        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                     </div>
-                    <!-- /.col-lg-4 -->
                     <div class="col-sm-6 well-lg text-center">
-
-                        <!--<img class="img-circle" src="http://lorempixel.com/140/140" alt="Generic placeholder image" width="140" height="140">-->
                         <span class="glyphicon glyph-xl glyphicon-eye-open"></span>
-
                         <h2>Remote Monitoring and Management</h2>
-
                         <p>Monitor and manage Networking Devices - Switches, routers, etc.; Bandwidth - Broadband, leased line, T1, and more.</p>
-
-                        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                     </div>
-                    <!-- /.col-lg-4 -->
                 </div>
-                <!-- /.row -->
-
                 <div class="row">
                     <div class="col-sm-6 well-lg text-center">
-
-                        <!--<img class="img-circle" src="http://lorempixel.com/140/140" alt="Generic placeholder image" width="140" height="140">-->
                         <span class="glyphicon glyph-xl glyphicon-time"></span>
-
                         <h2>Up and running in just 10 minutes.</h2>
-
-                        <p></p>
-
-                        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                     </div>
-                    <!-- /.col-lg-4 -->
                     <div class="col-sm-6 well-lg text-center">
-
-                        <!--<img class="img-circle" src="http://lorempixel.com/140/140" alt="Generic placeholder image" width="140" height="140">-->
-
                         <span class="glyphicon glyph-xl glyphicon-shopping-cart"></span>
-
                         <h2>Pay-as-you-go. No contracts.</h2>
-
-                        <p></p>
-
-                        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                     </div>
-                    <!-- /.col-lg-4 -->
                 </div>
-                <!-- /.row -->
             </div>
         </div>
-
-    <!--&lt;!&ndash;BEGIN ABOUT LOGICNOW BLOCK&ndash;&gt;-->
-
-
-    <!--<div class="container-fluid bg-img-10">-->
-        <!--<img src="http://placekitten.com/1080/1080">-->
-
-        <!--<div class="col-xs-12">-->
-            <!--<div class="container">-->
-                <!--<h2 class="text-center">-->
-                    <!--About LogicNow-->
-                <!--</h2>-->
-
-                <!--<p>-->
-                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec neque ut enim imperdiet-->
-                    <!--tempor. Integer sit amet justo in dui dignissim dignissim id non nibh. Curabitur varius est-->
-                    <!--dolor, volutpat auctor mauris efficitur a. Suspendisse pretium sapien et urna sagittis-->
-                    <!--venenatis. Praesent vulputate consequat enim at dapibus. Nunc rhoncus tellus sit amet arcu-->
-                    <!--vulputate fermentum.-->
-                <!--</p>-->
-            <!--</div>e-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash;END ABOUT LOGICNOW BLOCK&ndash;&gt;-->
-
     </div>
 
-    <!-- FOOTER -->
+
+
+
+<!-- FOOTER -->
     <footer>
         <div class="container">
             <p class="pull-right"><a href="#">Back to top</a></p>
@@ -409,8 +272,8 @@
     <!--*********** END BODY CONTAINER *****************-->
 
 
-<script src="scripts/b7f723f1.main.js"></script>
+<script src="scripts/070ee0be.main.js"></script>
 
 <script src="scripts/vendor/89a7a1f5.bootstrap.js"></script>
 </body>
-</html></html>
+</html>
