@@ -1,0 +1,26 @@
+en-rm-landing-page-v10-buglist
+
+06 AUG 10am
+
+1. typeface creates difficult-to-distinguish "l" and "i" characters in hero section subheader
+
+2. form fails to expose error messages after POSTDATA
+
+3. carousel image and text alignment is inconsistently centered
+
+4. typeface weight for subheaders needs to increase for legibility
+
+5. footer needs formatting
+
+6. hero section header typeface decreases too much when viewed at highly-compact screen sizes (mobile)
+
+7. [technical debt] format and label content repository for ease-of-use by Tammy
+
+8. carousel images and paragraphs are being clipped on the bottom at smaller screen sizes
+
+9. page needs to automatically scroll to top of form when form is opened - currently the form will open and parts of it will be below the fold
+
+10. at small screen sizes, if the form is opened while it is 'sticky' [stuck to the top once it is scrolled past], the user can not scroll down the form in order to complete it - instead it stays stuck to the top
+
+11. [technical debt] code base is split between development on hubspot and master on github. code repo needs to be updated in master from hubspot
+

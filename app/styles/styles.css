@@ -11,6 +11,8 @@ p.test {
     overflow: visible;
 }
 
+
+
 /*intent: no outline on buttons that gain focus*/
 .btn:focus {
     outline: none;
@@ -477,38 +479,7 @@ img + .brand-name {
     border-radius: 8px;
     border-width: thick;
 }
-/*@media (min-width: 400px) {*/
-    /*.main-form-block {*/
-        /*margin-top: -150px;*/
-        /*margin-bottom: 10px;*/
-        /*margin-left: 10px;*/
-        /*margin-right: 10px;*/
-    /*}*/
-/*}*/
-/*@media (min-width: 768px) {*/
-    /*.main-form-block {*/
-        /*/!*width: 400px;*!/*/
-        /*margin-top: -60px;*/
-        /*margin-bottom: 10px;*/
-        /*margin-left: 10px;*/
-        /*margin-right: 10px;*/
-        /*/!*position: absolute;*!/*/
-        /*/!*right: 5%;*!/*/
-        /*/!*left: auto;*!/*/
-    /*}*/
-/*}*/
-/*@media (min-width: 989px) {*/
-    /*.main-form-block {*/
-        /*/!*width: 500px;*!/*/
-        /*margin-top: -80px;*/
-        /*margin-bottom: 10px;*/
-        /*margin-left: 10px;*/
-        /*margin-right: 10px;*/
-        /*/!*position: absolute;*!/*/
-        /*/!*right: 10px;*!/*/
-        /*/!*left: auto;*!/*/
-    /*}*/
-/*}*/
+
 /*==================     Subscribe Form     ======================*/
 .subscribe-form {
     position: relative;
@@ -516,29 +487,38 @@ img + .brand-name {
     width: 300px;
     text-align: center;
 }
-/*.subscribe-form label, input {*/
-.subscribe-form label {
-    display: block;
-    max-width: 310px;
-    width: 100%;
-    position: relative;
-    padding: 12px 17px 12px 17px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    background: white;
-    border: 1px solid lightgray;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+
+::-webkit-input-placeholder {
+    color: #666666;
 }
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #666666;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #666666;
+}
+
+:-ms-input-placeholder {
+    color: #666666;
+}
+
+.subscribe-form label {
+    font-size: 14px;
+    padding: .5em;
+    margin: .5em;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    color: #2c2c2c;
+    font-family: inherit;
+}
+
 .subscribe-form input {
     display: block;
     max-width: 300px;
     position: relative;
-    padding: 20px;
     margin-top: 8px;
     margin-bottom: 8px;
     background: white;

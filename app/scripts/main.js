@@ -1,5 +1,6 @@
 
 
+
 function scrollTo(to, duration) {
     if (document.body.scrollTop == to) return;
     var diff = to - document.body.scrollTop;
@@ -29,7 +30,7 @@ $(document).ready(function () {
     var nav = ( $("#form-container") );
 
     $(window).scroll(function () {
-        console.log($(document).scrollTop());
+        //console.log($(document).scrollTop());
         if ($(document).scrollTop() >= 460) {
             //nav.css('position', 'fixed');
             //nav.css('top', '-3%');

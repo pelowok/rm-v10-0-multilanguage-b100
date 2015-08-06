@@ -9597,23 +9597,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 })( window );
 
 
-function toggleContactInfo(div)
-{
-    var className = div.getAttribute("class");
-    var btn = document.getElementById('btnContact');
-
-    if (className.indexOf("contactus") > -1) {
-        div.className = "col-xs-12 brand-contact contactinfo";
-        btn.innerHTML = 'Need assistance?<br>' +
-            'Call: USA +1 (888) 243-4329<br>' +
-            'UK +44 (0) 1382 309040';
-
-    }
-    else {
-        div.className = "col-xs-12 brand-contact contactus";
-        btn.innerHTML = 'Contact Us';
-    }
-}
 
 function scrollTo(to, duration) {
     if (document.body.scrollTop == to) return;
@@ -9644,7 +9627,7 @@ $(document).ready(function () {
     var nav = ( $("#form-container") );
 
     $(window).scroll(function () {
-        console.log($(document).scrollTop());
+        //console.log($(document).scrollTop());
         if ($(document).scrollTop() >= 460) {
             //nav.css('position', 'fixed');
             //nav.css('top', '-3%');
