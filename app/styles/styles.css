@@ -382,10 +382,10 @@ img + .brand-name {
     text-transform: none;
 }
 .splashimg h3 {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 22px;
-    line-height: 30px;
-    letter-spacing: 2.4px;
+    line-height: 26px;
+    letter-spacing: 1.8px;
 }
 .splashimg h4 {
     font-weight: 400;
@@ -398,14 +398,14 @@ img + .brand-name {
     margin-top: 1.5em;
 }
 @media (min-width: 480px) and (max-width: 767px) {
-    .splashimg h2 {
-        font-size: 32px;
-        line-height: 38px;
-    }
-    .splashimg h4 {
-         font-size: 18px;
-         line-height: 20px;
-     }
+    /*.splashimg h2 {*/
+        /*font-size: 32px;*/
+        /*line-height: 38px;*/
+    /*}*/
+    /*.splashimg h4 {*/
+         /*font-size: 18px;*/
+         /*line-height: 20px;*/
+     /*}*/
     .splashimg-inner {
         background: url( images/splashimg-rings-flat.jpg );
         background-repeat: no-repeat;
@@ -422,14 +422,14 @@ img + .brand-name {
         padding-top: 60px;
         padding-bottom: 80px;
     }
-    .splashimg h2 {
-        font-size: 18px;
-        line-height: 22px;
-    }
-    .splashimg h3 {
-        font-size: 14px;
-        line-height: 18px;
-    }
+    /*.splashimg h2 {*/
+        /*font-size: 18px;*/
+        /*line-height: 22px;*/
+    /*}*/
+    /*.splashimg h3 {*/
+        /*font-size: 14px;*/
+        /*line-height: 18px;*/
+    /*}*/
 }
 
 /*=========================== QUAL-FORM BLOCK ===================================*/
