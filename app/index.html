@@ -25,31 +25,27 @@
 </head>
 
 <body>
-<div id="page-container" class="container-fluid">
+<div id="page-container" class="container-fluid text-center">
 
     <!--+++++++++++++++ BEGIN HEADER SECTION ++++++++++++++-->
-    <div id="page-header" class="container bg-white no-pad no-margin absolute-75">
-        <div class="row>">
+    <div id="page-header" class="container bg-white mar-10">
+        <div class="row col-xs-12 col-sm-6">
             <div class="brand-logo">
                 <img class="logo" src="images/MAXfocus_4color.png" alt=""/>
-                <br>
-                <div class="row">
-                    <div class="col-xs-12 brand-contact contactus">
-                        <!--<div class="col-xs-12 brand-contact contactus" onclick="toggleContactInfo(this)">-->
-                        <!--<button id="btnContact" class="btn-nude " >Contact Us</button>-->
-                        <div class="contactinfo">
-                            Need assistance?<br>
-                            Call: USA +1 (888) 243-4329<br>
-                            UK +44 (0) 1382 309040</div>
-                    </div>
-                </div>
+            </div>
+        </div>
+        <div class="row col-xs-12 col-sm-6 text-right">
+            <div class="contactinfo">
+                Need assistance?<br>
+                Call: USA +1 (888) 243-4329<br>
+                UK +44 (0) 1382 309040
             </div>
         </div>
     </div>
 
     <!--+++++++++++++++ END HEADER SECTION ++++++++++++++-->
 
-    <!--+++++++++++++++ END HEADER SECTION ++++++++++++++-->
+
 
 
     <!--BEGIN HERO SECTION-->
@@ -63,20 +59,21 @@
                     <span class="col-xs-push-2 col-xs-5 text-center"><h4>LogicNow's RMM software enables businesses like yours to monitor and manage networks remotely and securely, 24x7.</h4></span>
                 </div>
                 <div class="row">
-                    <div class="col-sm-push-6 col-sm-3 text-right">
+                    <div class="text-center
+                                col-xs-offset-1 col-xs-10
+                                col-sm-offset-6 col-sm-5
+                                col-md-offset-7 col-md-4
+                                col-lg-offset-8 col-lg-3">
                         <div class="well-lg main-form-block" id="form-container">
-                                    <div class="panel-heading img-centered">
-                                        <img class="img-centered" src="images/MAXfocus_4color.png">
-                                    </div>
-                                    <div class="row">
-                                        <a href="#formDiv" class="arrow-toggle btn btn-warning btn-block btn-lg active collapsed" data-toggle="collapse">
-                                            Get your FREE 30-day Full Feature Trial
-                                            <br>
-                                            <span class="glyphicon glyph-lg glyphicon-collapse-up"></span>
-                                            <span class="glyphicon glyphicon-collapse-down hidden"></span>
-                                        </a>
-                                    </div>
-                            <div id="formDiv" class="collapse">
+                            <div class="row">
+                                <div class="btn-warning btn-block btn-lg disabled">
+                                    Get your FREE 30-day Full Feature Trial
+                                </div>
+                            </div>
+                            <div class="panel-heading img-centered">
+                                <img class="img-centered" src="images/MAXfocus_4color.png">
+                            </div>
+                            <div>
                                 <form role="form" id="subscribe-form" class="subscribe-form">
                                     <br>
                                     <div class="form-group">
@@ -138,15 +135,20 @@
 
     <!--END HERO SECTION-->
 
-    <div class="row pad-50 text-center">
-        <br>
-        <img src="http://cdn2.hubspot.net/hub/120076/file-2508565774-jpg/max_extra/RM/V5/imgs/rm_v5_awards.jpg">
-        <br>
+    <!--================ BEGIN AWARDS SECTION ==================-->
+
+    <div class="row text-center">
+        <div class="hidden-sm col-md-7" >
+            <img src="http://cdn2.hubspot.net/hub/120076/file-2508565774-jpg/max_extra/RM/V5/imgs/rm_v5_awards.jpg">
+        </div>
     </div>
+
+    <!--================ END AWARDS SECTION ==================-->
+
 
     <!--BEGIN MAIN CALL TO ACTION SECTION-->
     <div class="row bg-blue container-fluid text-center">
-        <div class="col-xs-12 text-left">
+        <div class="col-xs-6 col-md-12">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -154,74 +156,54 @@
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
+
                     <div class="item active">
                         <div class="container first-slide carousel-inner">
-                            <div class="row mar-40">
-                                <span class="vanish-768">
-                                   <div class="col-xs-offset-1 col-xs-6 text-center">
-                                       <img src="images/img97.png">
-                                   </div>
-                                    <div class="col-xs-5">
-                                        <h2 class="text-left">
-                                            24/7 Remote Network Monitoring and Management
-                                        </h2>
-                                        <p >
-                                            MAX RemoteManagement provides Remote Network Monitoring software used by 10,000+ IT Support Companies, Consultants and MSPs worldwide.
-                                        </p>
-                                    </div>
-                                </span>
-                                <span class="pop-768 pad-20 mar-20">
-                                    <div class="col-xs-offset-1 col-xs-10">
-                                        <h2 class="text-left">
-                                            24/7 Remote Network Monitoring and Management
-                                        </h2>
-                                        <p >
-                                            MAX RemoteManagement provides Remote Network Monitoring software used by 10,000+ IT Support Companies, Consultants and MSPs worldwide.
-                                        </p>
-                                    </div>
-                                </span>
+                            <div class="row pad-30">
+                                <div class="col-md-7 col-lg-4">
+                                    <img src="images/img97.png">
+                                </div>
+
+                                <div class="col-md-7 col-lg-4">
+                                    <h2 class="text-center">
+                                        24/7 Remote Network Monitoring and Management
+                                    </h2>
+                                    <p class="text-left">
+                                        MAX RemoteManagement provides Remote Network Monitoring software used by 10,000+ IT Support Companies, Consultants and MSPs worldwide.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="container second-slide carousel-inner">
-                            <div class="row mar-40">
-                                <span class="vanish-768">
-                                   <div class="col-xs-offset-1 col-xs-6 textcenter">
-                                       <img src="images/img07.png">
-                                   </div>
-                                    <div class="col-xs-5">
-                                        <h2 class="text-left">
-                                            How MAX RemoteManagement will help YOU
-                                        </h2>
-                                        <p >
-                                            It helps deliver increased uptime to customers by quick, easy monitoring of networking equipment and connectivity - leading to increased customer satisfaction and revenue for you.
-                                        </p>
-                                    </div>
-                                </span>
-                                <span class="pop-768 pad-20 mar-20">
-                                    <div class="col-xs-offset-1 col-xs-10">
-                                        <h2 class="text-left">
-                                            How MAX RemoteManagement will help YOU
-                                        </h2>
-                                        <p >
-                                            It helps deliver increased uptime to customers by quick, easy monitoring of networking equipment and connectivity - leading to increased customer satisfaction and revenue for you.
-                                        </p>
-                                    </div>
-                                </span>
+                            <div class="row pad-30">
+                               <div class="col-md-4">
+                                   <img src="images/img07.png">
+                               </div>
+
+                                <div class="col-md-4">
+                                    <h2 class="text-center">
+                                        How MAX RemoteManagement will help YOU
+                                    </h2>
+                                    <p class="text-left">
+                                        It helps deliver increased uptime to customers by quick, easy monitoring of networking equipment and connectivity - leading to increased customer satisfaction and revenue for you.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="container pad-30">
+                <div class="row pad-30 text-center">
                     <span>
 
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -232,6 +214,16 @@
         </div>
     </div>
     <!-- Carousel================================================== -->
+
+    <!--&lt;!&ndash;================ BEGIN AWARDS SECTION ==================&ndash;&gt;-->
+
+    <!--<div class="row pad-50 text-center">-->
+        <!--<br>-->
+        <!--<img src="http://cdn2.hubspot.net/hub/120076/file-2508565774-jpg/max_extra/RM/V5/imgs/rm_v5_awards.jpg">-->
+        <!--<br>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash;================ END AWARDS SECTION ==================&ndash;&gt;-->
 
         <!--END QUAL-FORM BLOCK-->
 
@@ -280,7 +272,7 @@
 
 <!-- build:js scripts/main.js -->
 <script src="bower_components/jquery/jquery.js"></script>
-<script src="scripts/main.js"></script>
+<!--<script src="scripts/main.js"></script>-->
 <!--<script src="scripts/module-test.js"></script>-->
 <!--<script src="scripts/hello.js"></script>-->
 <!-- endbuild -->

@@ -40,16 +40,21 @@ p.test {
 
 /*intent: BAD IDEA! set a fixed height to carousel */
 /*with padding and margins that protect content collision from above*/
-.carousel-inner {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    min-height: 325px;
-    max-height: 325px;
-}
+/*.carousel-inner {*/
+    /*margin-bottom: 30px;*/
+    /*padding-bottom: 20px;*/
+    /*min-height: 325px;*/
+    /*max-height: 325px;*/
+/*}*/
 
 /*intent: increase opacity of carousel-control class from 0.5 to 0.75*/
 .carousel-control {
     opacity: 0.75;
+}
+
+.carousel img {
+    min-width: 200px;
+    height: auto;
 }
 
 /*intent: do not display the prev- or next- icons in carousel*/
@@ -100,82 +105,7 @@ img {
     line-height: 1.2em;
 }
 
-.btn-nude:focus {
 
-}
-
-.btn-nude {
-    font-weight: 500;
-    color: #333333;
-    cursor: hand;
-    border-radius: 0;
-    outline: none;
-}
-
-.btn-nude,
-.btn-nude:active,
-.btn-nude[disabled],
-fieldset[disabled] .btn-nude {
-    background-color: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.btn-nude,
-.btn-nude:hover,
-.btn-nude:focus,
-.btn-nude:active {
-    border-color: transparent;
-    outline: none;
-}
-
-.btn-nude:hover,
-.btn-nude:focus {
-    color: #cccccc;
-    background-color: transparent;
-}
-
-.btn-nude[disabled]:hover,
-fieldset[disabled] .btn-nude:hover,
-.btn-nude[disabled]:focus,
-fieldset[disabled] .btn-nude:focus {
-    color: #999999;
-    text-decoration: none;
-}
-
-@media (max-width: 1023px) {
-    .vanish-1024 {
-        display: none;
-    }
-    .pop-1024 {
-        display: block;
-    }
-}
-@media (min-width: 1024px) {
-    .vanish-1024 {
-        display: block;
-    }
-    .pop-1024 {
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-    .vanish-768 {
-        display: none;
-    }
-    .pop-768 {
-        display: block;
-    }
-}
-@media (min-width: 768px) {
-    .vanish-768 {
-        display: block;
-    }
-    .pop-768 {
-        display: none;
-    }
-}
 
 /*================= CUSTOM DECORATION ====================*/
 
@@ -307,7 +237,7 @@ img + .brand-name {
 }
 .brand-logo{
     display: block;
-    text-align: left;
+    /*text-align: left;*/
 }
 .brand-slogan {
     padding-left: 2em;
@@ -334,22 +264,14 @@ img + .brand-name {
     vertical-align: middle;
     color: #333333;
 }
-@media (min-width: 870px) {
-    .brand-logo img.logo{
-        max-width: 240px;
-    }
-}
-@media (max-width: 869px) {
-    .brand-logo img.logo{
-        /*min-width: 25%;*/
-        max-width: 240px;
-    }
 
-}
 
 
 /*==================      splashimg     ======================*/
 .splashimg {
+    min-height: 40em;
+    max-height: 70vh;
+    overflow: visible;
     /*padding-top: 40px;*/
     padding-bottom: 40px;
     /*background: #333333;*/
@@ -360,10 +282,12 @@ img + .brand-name {
     color: #FFFFFF;
 }
 .splashimg-header {
-    padding-top: 117px;
+    max-height: 60%;
+    overflow: visible;
+    padding-top: 3em;
     position: relative;
     /*float: left;*/
-    margin-bottom: 10%;
+    margin-bottom: 3em;
 }
 .splashimg-footer {
     position: relative;
@@ -397,80 +321,12 @@ img + .brand-name {
     height: 3em;
     margin-top: 1.5em;
 }
-@media (min-width: 480px) and (max-width: 767px) {
-    /*.splashimg h2 {*/
-        /*font-size: 32px;*/
-        /*line-height: 38px;*/
-    /*}*/
-    /*.splashimg h4 {*/
-         /*font-size: 18px;*/
-         /*line-height: 20px;*/
-     /*}*/
-    .splashimg-inner {
-        background: url( images/splashimg-rings-flat.jpg );
-        background-repeat: no-repeat;
-        background-size: 50%;
-        background-position-x: 90%;
-        background-position-y: 50%;
-    }
-    .img-max-3 {
-        height: 1.5em;
-    }
-}
-@media (max-width: 479px) {
-    .splashimg {
-        padding-top: 60px;
-        padding-bottom: 80px;
-    }
-    /*.splashimg h2 {*/
-        /*font-size: 18px;*/
-        /*line-height: 22px;*/
-    /*}*/
-    /*.splashimg h3 {*/
-        /*font-size: 14px;*/
-        /*line-height: 18px;*/
-    /*}*/
-}
-
-/*=========================== QUAL-FORM BLOCK ===================================*/
-.qual-form-block{
-    display: block;
-    margin: 14px;
-    color: #FFFFFF;
-}
-.qual-form-block .well-lg{
-    /*background-color: rgba(255, 255, 255, 0.2);*/
-}
-
-/*.qual-form-block label input:checked {*/
-    /*label {*/
-        /*background-color: #DD1144;*/
-    /*}*/
-/*}*/
-
-
-/*======================== QUALIFIER BLOCK  ===================================*/
-.qualifier-block {
-    align-content: center;
-}
-.qualifier-block button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 80%;
-    white-space: normal;
-}
-
 
 /*=========================== FORM BLOCK =============================================*/
 .main-form-block {
     text-align: center;
-    background-color:rgba(240,240,240,1.0);
-    z-index: 1000;
-    /*width: 45%;*/
+    background-color: #efefef;
     width: 380px;
-    position: absolute;
-    /*right: 5%;*/
-    /*left: auto;*/
 }
 .has-border {
     background-color: #FFFFFF;
