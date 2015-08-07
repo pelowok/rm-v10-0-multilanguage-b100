@@ -3,7 +3,7 @@
 
     function btnManager(){
 
-        if (window.matchMedia("(max-width: 768px)").matches) {
+        if (window.matchMedia("(max-width: 767px)").matches) {
             /* the view port is at less than 768 pixels wide */
 
             $("#btnCTA").removeClass("disabled");
@@ -30,17 +30,6 @@
 
         };
 
-        //if (window.matchMedia("(min-width: 1200px)").matches) {
-        //    /* the view port is more than 1200 pixels wide */
-        //
-        //    document.getElementById("herosplash").style.maxHeight = '70vh';
-        //
-        //} else {
-        //    /* the view port is less than 1200 pixels wide */
-        //
-        //    document.getElementById("herosplash").style.maxHeight = '';
-        //
-        //}
     }
 
     window.addEventListener('load', btnManager, false);

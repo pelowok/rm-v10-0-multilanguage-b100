@@ -79,7 +79,8 @@ p.test {
 body {
     background: #ffffff;
     color: #384c6d;
-    font: 400 16px/29px "Ubuntu", sans-serif;
+    font: 400 16px/29px "myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+    /*font: 400 16px/29px "Ubuntu", sans-serif;*/
     -webkit-text-size-adjust: none;
     min-width:400px; /* minimun width of 480px */
     width: auto !important;  /* Firefox will set width as auto */
@@ -253,7 +254,8 @@ img + .brand-name {
     text-align: right;
 }
 .contactinfo {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     display: inline-block;
     padding: 0.5em 1em;
     margin-bottom: 0;
@@ -282,7 +284,7 @@ img + .brand-name {
     color: #FFFFFF;
 }
 .splashimg-header {
-    /*max-height: 60%;*/
+    max-height: 60%;
     overflow: visible;
     padding-top: 3em;
     position: relative;
@@ -324,7 +326,7 @@ img + .brand-name {
 
 /*=========================== FORM BLOCK =============================================*/
 .main-form-block {
-    position: relative;
+    position: absolute;
     text-align: center;
     background-color: rgba(240, 240, 240, 1.0 );
     width: 380px;
