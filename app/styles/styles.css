@@ -375,8 +375,18 @@ img + .brand-name {
 :-ms-input-placeholder {
     color: #666666;
 }
-
-.subscribe-form input {
+.subscribe-form select {
+    color: #333333;
+    margin-left: 10px;
+}
+.subscribe-form label {
+    color: #333333;
+    line-height: 1.1em;
+    font-weight: 300;
+    font-size: 12pt;
+    text-align: left;
+}
+.subscribe-form input, select {
     display: inline;
     max-width: 300px;
     /*max-width: 210px;*/
