@@ -341,6 +341,15 @@ img + .brand-name {
     /*z-index: 100;*/
 
 }
+.btn-warning.disabled,
+.btn-warning:disabled {
+    color: #ffffff;
+    background-color: #ed9c28;
+    border-color: #d58512;
+    opacity: 1;
+    filter: alpha(opacity=100);
+
+}
 
 /*==================     Subscribe Form     ======================*/
 .subscribe-form {
