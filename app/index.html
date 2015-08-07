@@ -27,6 +27,79 @@
 <body>
 <div id="page-container" class="container-fluid text-center">
 
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-header">Get your 30-day Full Feature Free Trial</h4>
+                    <img class="img-centered" src="images/MAXfocus_4color.png">
+                </div>
+                <div class="modal-body">
+                    <form role="form" id="subscribe-form" class="subscribe-form">
+                        <br>
+
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option value="one">United States</option>
+                                <option value="two">other country A</option>
+                                <option value="three">other country B</option>
+                                <option value="four">other country C</option>
+                                <option value="five">other country D</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="strInputName"
+                                   placeholder="company name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="strInputEmail"
+                                   placeholder="contact name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="strInputCompany"
+                                   placeholder="contact email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="strInputCity"
+                                   placeholder="city">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="strInputPostCode"
+                                   placeholder="post/zip code">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="strInputPhone"
+                                   placeholder="phone number">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="strInputURL"
+                                   placeholder="website URL">
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-lg btn-block btn-success " data-type="submit" href="">
+                                Try Now
+                                <span class="glyphicon glyphicon-arrow-right"></span>
+                            </button>
+                            <br>
+                            <span>
+                                <h6 style="color: #999999;">
+                                    Join thousands of MSPs and IT support companies already thriving with LogicNow.
+                                </h6>
+                            </span>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     <!--+++++++++++++++ BEGIN HEADER SECTION ++++++++++++++-->
     <div id="page-header" class="container bg-white mar-10">
         <div class="row col-xs-12 col-sm-6">
@@ -49,14 +122,14 @@
 
 
     <!--BEGIN HERO SECTION-->
-    <div class="splashimg" style="background-image: url('images/img90.jpg');">
+    <div id="herosplash" class="splashimg" style="background-image: url('images/img90.jpg');">
         <div class="container">
             <div class="splashimg-header">
                 <div class="row">
-                    <span class="col-xs-push-1 col-xs-7 text-center"><h2>Remote Network Monitoring & Management</h2></span>
+                    <span class="col-xs-12 col-sm-push-1 col-sm-7 text-center"><h2>Remote Network Monitoring & Management</h2></span>
                 </div>
                 <div class="row">
-                    <span class="col-xs-push-2 col-xs-5 text-center"><h4>LogicNow's RMM software enables businesses like yours to monitor and manage networks remotely and securely, 24x7.</h4></span>
+                    <span class="col-xs-push-1 col-xs-8 col-sm-push-2 col-sm-5 text-center"><h4>LogicNow's RMM software enables businesses like yours to monitor and manage networks remotely and securely, 24x7.</h4></span>
                 </div>
                 <div class="row">
                     <div class="text-center
@@ -65,15 +138,22 @@
                                 col-md-offset-7 col-md-4
                                 col-lg-offset-8 col-lg-3">
                         <div class="well-lg main-form-block" id="form-container">
+
+
                             <div class="row">
-                                <div class="btn-warning btn-block btn-lg disabled">
-                                    Get your FREE 30-day Full Feature Trial
-                                </div>
+                                <button id="btnCTA" class="btn btn-warning btn-block btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <h3>Get your FREE 30-day<br>Full Feature Trial</h3>
+                                </button>
                             </div>
-                            <div class="panel-heading img-centered">
-                                <img class="img-centered" src="images/MAXfocus_4color.png">
-                            </div>
-                            <div>
+
+
+
+                            <!--<div class="panel-heading img-centered hidden-xs">-->
+                                <!--<img class="img-centered" src="images/MAXfocus_4color.png">-->
+                            <!--</div>-->
+
+
+                            <div class="hidden-xs">
                                 <form role="form" id="subscribe-form" class="subscribe-form">
                                     <br>
                                     <div class="form-group">
@@ -138,7 +218,7 @@
     <!--================ BEGIN AWARDS SECTION ==================-->
 
     <div class="row text-center">
-        <div class="hidden-sm col-md-7" >
+        <div id="awardsection" class="col-xs-12 col-sm-6 col-md-7" >
             <img src="http://cdn2.hubspot.net/hub/120076/file-2508565774-jpg/max_extra/RM/V5/imgs/rm_v5_awards.jpg">
         </div>
     </div>
@@ -148,23 +228,25 @@
 
     <!--BEGIN MAIN CALL TO ACTION SECTION-->
     <div class="row bg-blue container-fluid text-center">
-        <div class="col-xs-6 col-md-12">
+        <div class="col-xs-12 col-sm-6 col-md-12">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                </ol>
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+
                 <div class="carousel-inner" role="listbox">
 
                     <div class="item active">
                         <div class="container first-slide carousel-inner">
                             <div class="row pad-30">
-                                <div class="col-md-7 col-lg-4">
+                                <div class="col-xs-12 col-sm-12 col-md-7  col-lg-4">
                                     <img src="images/img97.png">
                                 </div>
 
-                                <div class="col-md-7 col-lg-4">
+                                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-3">
                                     <h2 class="text-center">
                                         24/7 Remote Network Monitoring and Management
                                     </h2>
@@ -179,11 +261,11 @@
                     <div class="item">
                         <div class="container second-slide carousel-inner">
                             <div class="row pad-30">
-                               <div class="col-md-4">
-                                   <img src="images/img07.png">
-                               </div>
+                                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-4">
+                                    <img src="images/img07.png">
+                                </div>
 
-                                <div class="col-md-4">
+                                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-3">
                                     <h2 class="text-center">
                                         How MAX RemoteManagement will help YOU
                                     </h2>
@@ -257,9 +339,6 @@
         </div>
     </div>
 
-
-
-
 <!-- FOOTER -->
     <footer>
         <div class="container">
@@ -272,7 +351,7 @@
 
 <!-- build:js scripts/main.js -->
 <script src="bower_components/jquery/jquery.js"></script>
-<!--<script src="scripts/main.js"></script>-->
+<script src="scripts/main.js"></script>
 <!--<script src="scripts/module-test.js"></script>-->
 <!--<script src="scripts/hello.js"></script>-->
 <!-- endbuild -->

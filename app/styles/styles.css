@@ -81,9 +81,9 @@ body {
     color: #384c6d;
     font: 400 16px/29px "Ubuntu", sans-serif;
     -webkit-text-size-adjust: none;
-    min-width:480px; /* minimun width of 480px */
+    min-width:400px; /* minimun width of 480px */
     width: auto !important;  /* Firefox will set width as auto */
-    width:480px;             /* As IE ignores !important it will set width as 480px; */
+    width:400px;             /* As IE ignores !important it will set width as 400px; */
 }
 
 img {
@@ -282,7 +282,7 @@ img + .brand-name {
     color: #FFFFFF;
 }
 .splashimg-header {
-    max-height: 60%;
+    /*max-height: 60%;*/
     overflow: visible;
     padding-top: 3em;
     position: relative;
@@ -312,10 +312,10 @@ img + .brand-name {
     letter-spacing: 1.8px;
 }
 .splashimg h4 {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 1.2px;
 }
 .img-max-3 {
     height: 3em;
@@ -324,24 +324,29 @@ img + .brand-name {
 
 /*=========================== FORM BLOCK =============================================*/
 .main-form-block {
+    position: relative;
     text-align: center;
-    background-color: #efefef;
+    background-color: rgba(240, 240, 240, 1.0 );
     width: 380px;
+    z-index: 100;
 }
-.has-border {
-    background-color: #FFFFFF;
-    opacity: 0.3;
-    border-color: transparent;
-    border-radius: 8px;
-    border-width: thick;
+.main-form-block-xs {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    /*width: 380px;*/
+    /*z-index: 100;*/
+
 }
 
 /*==================     Subscribe Form     ======================*/
 .subscribe-form {
-    position: relative;
+
     display: inline-block;
-    width: 300px;
+    width: 320px;
     text-align: center;
+
 }
 
 ::-webkit-input-placeholder {
@@ -360,22 +365,12 @@ img + .brand-name {
     color: #666666;
 }
 
-.subscribe-form label {
-    font-size: 14px;
-    padding: .5em;
-    margin: .5em;
-    font-weight: 400;
-    line-height: normal;
-    text-align: left;
-    color: #2c2c2c;
-    font-family: inherit;
-}
-
 .subscribe-form input {
-    display: block;
+    display: inline;
     max-width: 300px;
+    /*max-width: 210px;*/
     position: relative;
-    margin-top: 8px;
+    /*margin-top: 8px;*/
     margin-bottom: 8px;
     background: white;
     border: 2px solid lightgray;
@@ -385,22 +380,6 @@ img + .brand-name {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-}
-
-.subscribe-form a[data-type="submit"] {
-    padding: 12px 20px;
-    font-size: 19px;
-    line-height: 21px;
-}
-.subscribe-form label + a[data-type="submit"] {
-    margin-top: 10px;
-    margin-left: 6px;
-}
-@media (max-width: 979px) {
-    .subscribe-form label + a[data-type="submit"] {
-        margin-top: 10px;
-        margin-left: 0;
-    }
 }
 
 .error {

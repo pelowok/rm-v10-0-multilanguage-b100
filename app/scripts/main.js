@@ -1,67 +1,48 @@
 
 
 
-function scrollTo(to, duration) {
-    if (document.body.scrollTop == to) return;
-    var diff = to - document.body.scrollTop;
-    var scrollStep = Math.PI / (duration / 10);
-    var count = 0, currPos;
-    var start = document.body.scrollTop;
-    var scrollInterval = setInterval(function(){
-        if (document.body.scrollTop != to) {
-            count = count + 1;
-            currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
-            document.body.scrollTop = currPos;
-        }
-        else { clearInterval(scrollInterval); }
-    },10);
-}
+    function btnManager(){
 
-function scrollTest(elID)
-{
-    console.log('test');
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            /* the view port is at less than 768 pixels wide */
 
-    var dest = document.getElementById(elID);
-    scrollTo(dest.offsetTop, 500);
-}
+            $("#btnCTA").removeClass("disabled");
 
-$(document).ready(function () {
+            $("#awardsection").addClass("pad-30");
 
-    var nav = ( $("#form-container") );
+            $("#form-container").removeClass("main-form-block");
+            $("#form-container").addClass("main-form-block-xs");
 
-    $(window).scroll(function () {
-        //console.log($(document).scrollTop());
-        if ($(document).scrollTop() >= 460) {
-            //nav.css('position', 'fixed');
-            //nav.css('top', '-3%');
-            //nav.css('right', 'auto');
-            //nav.css('opacity', '1');
-            //nav.css('z-index', '1000');
 
-            nav.css('text-align','center');
-            nav.css('background-color', 'rgba(240,240,240,1.0)');
-            nav.css('z-index', '1000');
-            nav.css('width', '380px');
-            nav.css('position', 'fixed');
-
-            nav.css('top', '0');
+            document.getElementById("herosplash").style.maxHeight = '';
 
         } else {
-            //nav.css('top','auto');
-            //nav.css('right','auto');
-            //nav.css('position', 'absolute');
-            //nav.css('z-index', '1000');
+            /* the view port is more than 768 pixels wide */
 
-            nav.css('text-align','center');
-            nav.css('background-color', 'rgba(240,240,240,1.0)');
-            nav.css('z-index', '1000');
-            nav.css('width', '380px');
-            nav.css('position', 'absolute');
+            $("#btnCTA").addClass("disabled");
 
+            $("#awardsection").removeClass("pad-30");
 
-        }
-    });
-});
+            $("#form-container").removeClass("main-form-block-xs");
+            $("#form-container").addClass("main-form-block");
 
+            document.getElementById("herosplash").style.maxHeight = '70vh';
 
+        };
+
+        //if (window.matchMedia("(min-width: 1200px)").matches) {
+        //    /* the view port is more than 1200 pixels wide */
+        //
+        //    document.getElementById("herosplash").style.maxHeight = '70vh';
+        //
+        //} else {
+        //    /* the view port is less than 1200 pixels wide */
+        //
+        //    document.getElementById("herosplash").style.maxHeight = '';
+        //
+        //}
+    }
+
+    window.addEventListener('load', btnManager, false);
+    window.addEventListener('resize', btnManager, false);
 
