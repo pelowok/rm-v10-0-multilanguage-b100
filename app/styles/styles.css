@@ -5,6 +5,11 @@ body {
     max-width: 100%;
 }
 
+@media (min-width: 1921px) {
+    .container {
+        width: 1800px;
+    }
+}
 p.test {
     border: 1px solid #FFFFFF;
     white-space: normal;
